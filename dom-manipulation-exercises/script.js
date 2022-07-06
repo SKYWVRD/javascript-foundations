@@ -23,3 +23,19 @@ newDiv.appendChild(divParagraph)
 container.appendChild(paragraph);
 container.appendChild(levelThreeHeading)
 container.appendChild(newDiv)
+
+const btn = document.querySelector('#btn');
+btn.addEventListener('click', function(event) {
+    console.log(event.target);
+    event.target.style.background = 'blue';
+})
+
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button)=>{
+
+    button.addEventListener('click', () =>{
+        alert(button.id);
+    })
+
+})
